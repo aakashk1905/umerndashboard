@@ -134,11 +134,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="merndashboard">
-          <Route path="" element={<Main />} />
-          <Route path=":slug" element={<Main />} />
-          <Route path="mentor/review" element={<MentorReview />} />
-          <Route path="stage" element={<RedirectComponent2 />} />
+        <Route path="mern">
+          <Route path="dashboard" element={<Main />} />
+          <Route path="dashboard/:slug" element={<Main />} />
+          <Route path="dashboard/mentor/review" element={<MentorReview />} />
+          <Route path="dashboard/stage" element={<RedirectComponent2 />} />
         </Route>
       </Routes>
     </BrowserRouter>
